@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:local="clr-namespace:CarouselView_android_recycled_bitmap"
+             x:Class="CarouselView_android_recycled_bitmap.MainPage">
+
+    <CarouselView x:Name="CarouselView">
+        <CarouselView.ItemTemplate>
+            <DataTemplate x:DataType="local:Item">
+                <Image MaximumHeightRequest="300" Source="{Binding Link}" />
+            </DataTemplate>
+        </CarouselView.ItemTemplate>
+    </CarouselView>
+
+</ContentPage>
