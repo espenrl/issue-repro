@@ -3,20 +3,18 @@
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
              x:Class="maui_grid.MainPage">
 
-    <Grid>
+    <Grid RowDefinitions="*,Auto">
 
-        <Grid RowDefinitions="*,Auto">
+        <ScrollView>
+            <VerticalStackLayout>
+                <Border HeightRequest="3000"
+                        BackgroundColor="LightGray" />
+            </VerticalStackLayout>
+        </ScrollView>
 
-            <Border BackgroundColor="LightGray" />
-
-            <Button x:Name="Button"
-                    Grid.Row="1"
-                    IsVisible="False"
-                    Text="Some button" />
-
-        </Grid>
-
-        <!-- more grids here, but only one visible at a time -->
+        <Button Grid.Row="1"
+                Margin="20"
+                Text="Some button" />
 
     </Grid>
 
